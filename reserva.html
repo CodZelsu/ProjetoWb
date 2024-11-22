@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Hotel</title>
+  <link rel="stylesheet" href="../static/reserva.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="hotel.html" class="botao">Início</a>
+
+            </li>
+        </ul>
+    </nav>        
+  <div class="container">
+    <h1>Reserva de Hotel</h1>
+    <form action="#" method="POST" class="reservation-form">
+      <label for="checkin">Data de Entrada:</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Data de Saída:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="guests">Número do Quarto:</label>
+      <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+      <label for="room-type">Tipo de Quarto:</label>
+      <select id="room-type" name="room-type" required>
+        <option value="single">Solteiro</option>
+        <option value="double">Duplo</option>
+        <option value="suite">Suíte</option>
+        <option value="deluxe">Deluxe</option>
+      </select>
+
+      <label for="special-requests">Observações:</label>
+      <textarea id="special-requests" name="special-requests" rows="4" placeholder="Insira pedidos especiais aqui..."></textarea>
+
+      <button type="submit">Reservar Agora</button>
+    </form>
+  </div>
+
+  <div>
+    <footer>
+        <p>Telefone: xxxxx-xxxx</p>
+        <p>Email: hotelariaporsol@gmail.com.br</p>
+        <p>coisas</p>
+    </footer>
+</div>
+
+</body>
+</html>

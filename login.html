@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="../static/login.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="hotel.html" class="botao">Início</a>
+
+            </li>
+        </ul>
+    </nav>        
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <br><br>
+            
+            <label for="password">Senha:</label>
+            <input type="password" placeholder= "Senha" id="password" name="password" required>
+            <br><br>
+            
+            <button type= "submit"> <a href = "home.html"> <p>Entrar</button>
+        </form>
+        <p class="register">
+            Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui.</a>
+        </p>
+    </div>
+</body>
+</html>
